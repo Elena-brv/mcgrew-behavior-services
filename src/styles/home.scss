@@ -1,0 +1,40 @@
+.home {
+  max-width: 470px;
+
+  @media (max-width: $tabletBreakPoint) {
+    width: 40%;
+  }
+
+  &__heading {
+    @extend %heading;
+    position: relative;
+  }
+
+  &__underline {
+    position: relative;
+
+    &::after {
+      @include line;
+    }
+  }
+
+  &__text {
+    margin: 50px 0;
+    color: #fff;
+
+    @media (max-width: $mobileBreakPoint) {
+      margin: 25px 0;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      display: none;
+    }
+  }
+
+  &__link {
+
+    @media (max-width: $smallMobileBreakPoint) {
+      margin-top: 50px;
+    }
+  }
+}

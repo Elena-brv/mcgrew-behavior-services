@@ -1,0 +1,69 @@
+.slider {
+  position: relative;
+}
+
+.game .slick {
+
+  &-track {
+    display: flex;
+  }
+
+  &-slide {
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-arrow {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.partners .slick {
+
+  &-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &-slide:focus {
+    outline: none;
+  }
+
+  &-arrow {
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: calc(50% - 10px);
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  &-prev {
+    background: url("../images/arrow-left.svg") 0 0 no-repeat;
+    left: 30px;
+  }
+
+  &-next {
+    background: url("../images/arrow-right.svg") 0 0 no-repeat;
+    right: 30px;
+  }
+}

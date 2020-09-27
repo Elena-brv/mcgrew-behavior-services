@@ -1,0 +1,97 @@
+.game {
+  background-color: #1b97c5;
+  $pictureWidth: 749px;
+  $pictureHeight: 496px;
+
+  &__container {
+    $containerHeight: 600px;
+    height: $containerHeight;
+    margin-bottom: 110px;
+    position: relative;
+
+    background-image: url("../images/abstraction@2x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (max-width: $tabletBreakPoint) {
+      height: $containerHeight * 0.8;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      height: $containerHeight * 0.6;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      height: $containerHeight * 0.3;
+    }
+  }
+
+  &__picture {
+    width: $pictureWidth;
+    height: $pictureHeight;
+    margin-top: 10%;
+    outline: 7px solid #fff;
+
+    @media (max-width: $tabletBreakPoint) {
+      width: $pictureWidth * 0.8;
+      height: $pictureHeight * 0.8;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      width: $pictureWidth * 0.6;
+      height: $pictureHeight * 0.6;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      width: $pictureWidth * 0.3;
+      height: $pictureHeight * 0.3;
+    }
+  }
+
+  &__decor {
+    display: flex;
+    position: absolute;
+    bottom: 8px;
+    width: $pictureWidth;
+    height: $pictureHeight;
+    left: calc(50% - #{$pictureWidth / 2});
+
+    @media (max-width: $tabletBreakPoint) {
+      width: $pictureWidth * 0.8;
+      height: $pictureHeight * 0.8;
+      left: calc(50% - #{$pictureWidth * 0.8 / 2});
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      width: $pictureWidth * 0.6;
+      height: $pictureHeight * 0.6;
+      left: calc(50% - #{$pictureWidth * 0.6 / 2});
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      width: $pictureWidth * 0.3;
+      height: $pictureHeight * 0.3;
+      left: calc(50% - #{$pictureWidth * 0.3 / 2});
+    }
+  }
+
+  &__rectangle {
+    width: $pictureWidth / 3;
+
+    @media (max-width: $tabletBreakPoint) {
+      width: calc(#{$pictureWidth / 3} * 0.8) ;
+      height: $pictureHeight * 0.8;
+    }
+
+    @media (max-width: $mobileBreakPoint) {
+      width: calc(#{$pictureWidth / 3} * 0.6) ;
+      height: $pictureHeight * 0.6;
+    }
+
+    @media (max-width: $smallMobileBreakPoint) {
+      width: calc(#{$pictureWidth / 3} * 0.3) ;
+      height: $pictureHeight * 0.3;
+    }
+  }
+}

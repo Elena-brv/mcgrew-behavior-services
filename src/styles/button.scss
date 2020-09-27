@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+  height: 60px;
+
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  @include hover(opacity, 0.85);
+
+  @media (max-width: $mobileBreakPoint) {
+    width: 230px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  @media (max-width: $smallMobileBreakPoint) {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  &--major {
+    background-color: #e1aa6e;
+    box-shadow: 0 10px #ba8e5b;
+  }
+
+  &--careers {
+    background-color: $styleColor;
+    box-shadow: 0 10px #008ea5;
+  }
+}

@@ -1,4 +1,13 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%heading {
+  font-weight: 900;
+  font-size: 48px;
+  color: #fff;
+
+  @media (max-width: $tabletBreakPoint) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $mobileBreakPoint) {
+    font-size: 36px;
+  }
 }

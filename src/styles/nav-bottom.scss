@@ -1,0 +1,29 @@
+.nav-bottom {
+
+  &__list {
+    display: flex;
+
+    @media (max-width: $mobileBreakPoint) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 15px;
+    margin: 0 15px;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #999;
+    @include hover(opacity, 0.7);
+
+    @media (max-width: $mobileBreakPoint) {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  }
+}

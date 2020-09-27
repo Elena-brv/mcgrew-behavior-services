@@ -1,0 +1,35 @@
+.submenu {
+  display: none;
+  text-align: right;
+  background: linear-gradient(90deg,
+  rgba(235,235,235,1) 0%,
+  rgba(182,182,182,1) 0%,
+  rgba(0,181,210,1) 100%);
+  width: 120px;
+
+  &__list {
+    display: none;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    width: 200px;
+    background: linear-gradient(90deg,
+    rgba(219,198,175,1) 0%,
+    rgba(225,170,110,1) 100%);
+  }
+
+  &__item {
+    border: 2px solid #079c9c;
+  }
+
+  &__point {
+    border: 2px solid #ba8e5b;
+  }
+
+  &__link {
+    display: block;
+    padding: 5px;
+    color: $linksColor;
+    @include hover(color, #fff);
+  }
+}

@@ -3,11 +3,392 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>McGrew Behavior Services</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header" id="header">
+      <div class="header__container container">
+        <div class="header__navigation">
+          <a href="https://www.google.com" class="header__link">
+            <img
+              class="header__logo"
+              src="./images/logo.png"
+              alt="McGrew Behavior Services"
+            >
+          </a>
+          <button
+            type="button"
+            class="header__mobile-menu mobile-menu"
+          >
+            <img
+              class="header__toggler  header__toggler--active"
+              src="./images/burger.svg"
+              alt="menu"
+            >
+            <img
+              class="header__toggler"
+              src="./images/cross.svg"
+              alt="menu"
+            >
+          </button>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#home" class="nav__link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">About us</a>
+                <ul class="nav__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#partners" class="submenu__link">Partners</a>
+                    <ul class="submenu__list">
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Magellan health</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Kaiser Permanente</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Anthem</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">North Bay Regional Center</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Partnership HealthPlan of California</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Aetna</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#about" class="submenu__link">Support</a>
+                    <ul class="submenu__list">
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="#contact" class="nav__link">Contact</a>
+                <ul class="nav__submenu submenu">
+                  <li class="submenu__item">
+                    <a href="#contact" class="submenu__link">Contact us</a>
+                    <ul class="submenu__list">
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#careers" class="submenu__link">Team</a>
+                    <ul class="submenu__list">
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="https://www.google.com" class="submenu__link">Item</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#footer" class="submenu__link">Our contacts</a>
+                    <ul class="submenu__list">
+                      <li class="submenu__point">
+                        <a href="#socials" class="submenu__link">Socials</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="#address" class="submenu__link">Address</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="#phone" class="submenu__link">Phone</a>
+                      </li>
+                      <li class="submenu__point">
+                        <a href="#email" class="submenu__link">Email</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__home home" id="home">
+          <h1 class="home__heading">
+            We can <span class="home__underline">help.</span>
+          </h1>
+          <p class="home__text">
+            Teaching independence to the lives of the people you love with
+            reliable, individualized emotional and behavioral therapy.
+          </p>
+          <a
+            href="https://www.google.com"
+            class="home__link button button--major"
+          >
+            Find help here
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="partners" id="partners">
+        <div class="partners__container container slider">
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/magelan-health.png"
+              alt="Magellan health"
+            >
+          </div>
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/kaiser-permanente.png"
+              alt="Kaiser Permanente"
+            >
+          </div>
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/anthem.png"
+              alt="Anthem"
+            >
+          </div>
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/northbay.png"
+              alt="North Bay Regional Center"
+            >
+          </div>
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/partnership-health.png"
+              alt="Partnership HealthPlan of California"
+            >
+          </div>
+          <div class="partners__item slider__item">
+            <img
+              class="partners__logo"
+              src="./images/aetna.png"
+              alt="Aetna"
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container container">
+          <h1 class="about__heading">
+            Support For People Of All Walks of Life
+          </h1>
+          <p class="about__text">
+            Children as young as 2 years old may begin to develop
+            behaviors which need extra support and attention.
+          </p>
+          <img
+            class="about__picture"
+            src="./images/vector-smart-object.png"
+            alt="Person growth"
+          >
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact__container container">
+          <h3 class="contact__heading">
+            McGrew Behavior Services Helps...
+          </h3>
+          <p class="contact__text">
+            Families, organizations and health care providers in Northern
+            California. Our knowledge and experience provide the specialized
+            support people need when overcoming behavioral
+          </p>
+          <a
+            href="https://www.google.com"
+            class="contact__link button button--major"
+          >
+            Contact us
+          </a>
+        </div>
+      </section>
+
+      <section class="game">
+        <div class="game__container container slider-game">
+          <div class="game__item slider-game__item">
+            <img
+              class="game__picture"
+              src="./images/playing.png"
+              alt="Woman with girl are playing"
+            >
+            <div class="game__decor decor">
+              <img
+                class="game__rectangle"
+                src="./images/rectangle.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle2.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle3.png"
+                alt=""
+              >
+            </div>
+          </div>
+
+          <div class="game__item slider-game__item">
+            <img
+              class="game__picture"
+              src="./images/playing2.jpg"
+              alt="Woman with girl are playing"
+            >
+            <div class="game__decor decor">
+              <img
+                class="game__rectangle"
+                src="./images/rectangle.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle2.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle3.png"
+                alt=""
+              >
+            </div>
+          </div>
+
+          <div class="game__item slider-game__item">
+            <img
+              class="game__picture"
+              src="./images/playing3.jpg"
+              alt="Woman with girls are playing"
+            >
+            <div class="game__decor decor">
+              <img
+                class="game__rectangle"
+                src="./images/rectangle.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle2.png"
+                alt=""
+              >
+              <img
+                class="game__rectangle"
+                src="./images/rectangle3.png"
+                alt=""
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="careers" id="careers">
+        <div class="careers__container container">
+          <img
+            class="careers__picture"
+            src="./images/people.png"
+            alt="Team photo"
+          >
+
+          <div class="careers__info">
+            <p class="careers__appeal">
+              Be a part of something bigger than yourself. Make a difference.
+            </p>
+            <h1 class="careers__heading">
+              Join Our <span class="careers__underline">Team.</span>
+            </h1>
+            <p class="careers__text">
+              We are always looking for highly motivated individuals who aligned
+              with our committment to making a difference in the lives of other
+              people. Whether you’re a BCBA or interested in ABA work we are
+              interested in talking to you!
+            </p>
+            <a
+              href="https://www.google.com"
+              class="careers__link button button--careers"
+            >
+              Find what's available
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footer">
+      <div class="footer__container container">
+        <nav class="footer__nav nav-bottom">
+          <ul class="nav-bottom__list">
+            <li class="nav-bottom__item">
+              <a href="#home" class="nav-bottom__link">Home</a>
+            </li>
+            <li class="nav-bottom__item">
+              <a href="#about" class="nav-bottom__link">About us</a>
+            </li>
+            <li class="nav-bottom__item">
+              <a href="#contact" class="nav-bottom__link">Contact</a>
+            </li>
+            <li class="nav-bottom__item">
+              <a href="#careers" class="nav-bottom__link">Careers</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__networks" id="networks">
+          <a href="https://www.google.com" class="footer__network">i</a>
+          <a href="https://www.google.com" class="footer__network">o</a>
+          <a href="https://www.google.com" class="footer__network">m</a>
+        </div>
+
+        <div class="footer__contacts contacts">
+          <p class="contacts__address" id="address">
+            120 Theresa Ave, American Canyon, CA 94503
+          </p>
+          <p class="contacts__phone" id="phone">
+            <a href="tel:707.561.0134 " class="contacts__link--phone">707.561.0134</a>
+          </p>
+          <p class="contacts__email" id="email">
+            <a href="mailto:familyresources@mbisinc.com" class="contacts__link--email">familyresources@mbisinc.com</a>
+          </p>
+        </div>
+
+        <p class="footer__copyrights">
+          Copyright &copy; 2017 McGrews Behavior Services All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/scripts/retina.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -1,2 +1,5 @@
 /backstop_data
 /dist
+/src/scripts/retina.js
+/src/scripts/retina.min.js
+/src/scripts/main.js

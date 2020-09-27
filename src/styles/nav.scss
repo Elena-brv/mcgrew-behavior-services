@@ -1,0 +1,43 @@
+.nav {
+
+  &__list {
+    display: flex;
+
+    @media (max-width: $mobileBreakPoint) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin-left: 40px;
+    position: relative;
+  }
+
+  &__link {
+    position: relative;
+    color: $linksColor;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #fff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -40px;
+        width: 100%;
+        height: 5px;
+        background-color: $styleColor;
+      }
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+}

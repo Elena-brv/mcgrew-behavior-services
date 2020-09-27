@@ -4,3 +4,13 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin line {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  width: 90%;
+  height: 4px;
+  background-color: $styleColor;
+}
